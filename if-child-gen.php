@@ -124,15 +124,15 @@
 
 				<div class="notice notice-warning is-dismissible if-child-theme-notice" style="background: #fcf8e3">
 					<p>
-						<strong><?php printf( __( 'The current theme &ldquo;%s&rdquo; is not a child theme.', 'if-child-theme' ), $current_theme->name ); ?></strong>
-						<?php _e( 'Child themes are the recommended way of modifying an existing theme.', 'if-child-theme' ); ?>
-
-						<br>
+						<strong><?php printf( __( 'The current theme &ldquo;%s&rdquo; is not a child theme.', 'if-child-gen' ), $current_theme->name ); ?></strong>
+						<?php _e( 'Child themes are the recommended way of modifying an existing theme.', 'if-child-gen' ); ?>
+					</p>
+					<p>
 						<button type="button" class="button button-small button-secondary if-child-theme-button hide-notice" style="opacity: 0">
-							<?php printf( __( 'Hide notice for &ldquo;%s&rdquo; theme', 'if-child-theme' ), $current_theme->name ); ?>
+							<?php printf( __( 'Hide notice for &ldquo;%s&rdquo; theme', 'if-child-gen' ), $current_theme->name ); ?>
 						</button>
 						<a href="<?php echo admin_url( 'tools.php?page=if-child-gen' ); ?>" class="button button-small button-primary if-child-theme-button" style="opacity: 0">
-							<?php _e( 'Create a child theme', 'if-child-theme' ); ?>
+							<?php _e( 'Create a child theme', 'if-child-gen' ); ?>
 						</a>
 					</p>
 				</div>

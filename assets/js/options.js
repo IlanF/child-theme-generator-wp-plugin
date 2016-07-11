@@ -63,7 +63,7 @@
 
         $('#style-css-header-code').text(header_string)
             .attr('rows', header_string.split(/\r\n|\n/).length);
-        $('.style-css-header-code-wrapper').css('height', $('#style-css-header-code').outerHeight() + 'px');
+        $('.style-css-header-code-wrapper').css('height', ($('#style-css-header-code').outerHeight() + $('.style-css-header-code-wrapper > .description').outerHeight()) + 'px');
     });
 
     $document.on('click', '#style-css-header-code', function() {
@@ -74,12 +74,11 @@
         e.preventDefault();
         var $wrapper = $('.style-css-header-code-wrapper');
 
-        $wrapper.toggleClass('slide-out');
-        if(!$wrapper.hasClass('slide-out')) {
-            $wrapper.one('transitionend', function() {
-                $('#style-css-header-code').trigger('click');
-            });
-        }
+		$(this).attr('disabled', true);
+        $wrapper.removeClass('slide-out');
+        $wrapper.one('transitionend', function() {
+			$('#style-css-header-code').trigger('click');
+		});
     });
 
     $document.on('change', '[name="parent_theme"]', function() {

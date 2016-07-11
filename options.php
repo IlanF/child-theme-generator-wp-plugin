@@ -13,7 +13,7 @@
                     <table class="form-table">
                         <tbody>
                             <tr>
-                                <th><label><?php esc_html_e( 'Parent Theme', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Parent Theme', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <select name="parent_theme">
                                         <?php $themes = wp_get_themes(); $current_theme = get_stylesheet(); ?>
@@ -64,74 +64,75 @@
                     <table class="form-table">
                         <tbody>
                             <tr>
-                                <th><label><?php esc_html_e( 'Theme Name', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Theme Name', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_name"
-                                           placeholder="<?php esc_attr_e( 'Your theme\'s name', 'if-child-gen' ); ?>">
+                                           placeholder="<?php echo esc_attr( _x( 'My New Child Theme', 'Theme name placeholder', 'if-child-gen' ) ); ?>">
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Theme URI', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Theme URI', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_uri"
-                                           placeholder="<?php esc_attr_e( 'Theme homepage URL', 'if-child-gen' ); ?>">
+                                           placeholder="<?php echo esc_attr( _x( 'http://www.example.com/my-theme', 'Theme URI placeholder', 'if-child-gen' ) ); ?>">
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Description', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Description', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <textarea rows="3"
                                               cols="50"
                                               class="large-text"
                                               name="theme_description"
-                                              placeholder="<?php esc_attr_e( 'Short description of the theme', 'if-child-gen' ); ?>"></textarea>
+                                              placeholder="<?php echo esc_attr( _x( 'Short description for my new theme', 'Description placeholder', 'if-child-gen' ) ); ?>"></textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Author', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Author', 'if-child-gen' ); ?></label></th>
                                 <td>
-                                    <p><label><?php esc_html_e( 'Author Name', 'if-child-theme' ); ?></label></p>
+                                    <p><label><?php esc_html_e( 'Author Name', 'if-child-gen' ); ?></label></p>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_author"
-                                           placeholder="<?php esc_attr_e( 'Author name', 'if-child-gen' ); ?>"
+                                           placeholder="echo esc_attr( _x( 'John Doe', 'Author name placeholder', 'if-child-gen' ) )"
                                            value="<?php echo wp_get_current_user()->display_name; ?>">
 
-                                    <p><label><?php esc_html_e( 'Author Homepage', 'if-child-theme' ); ?></label></p>
+                                    <p><label><?php esc_html_e( 'Author Homepage', 'if-child-gen' ); ?></label></p>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_author_uri"
-                                           placeholder="<?php esc_attr_e( 'Author\'s website URL', 'if-child-gen' ); ?>"
+                                           placeholder="<?php echo esc_attr( _x( 'http://www.example.com', 'Author homepage placeholder', 'if-child-gen' ) ); ?>"
                                            value="<?php echo wp_get_current_user()->user_url; ?>">
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Version', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Version', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_version"
-                                           placeholder="<?php esc_attr_e( '1.0.0', 'if-child-gen' ); ?>">
+                                           placeholder="<?php echo esc_attr( _x( 'x.y.z', 'Version number placeholder', 'if-child-gen' ) ); ?>"
+                                           value="1.0.0">
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Text Domain', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Text Domain', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_text_domain"
-                                           placeholder="<?php esc_attr_e( 'Short identifier for the theme (slug)', 'if-child-gen' ); ?>">
+                                           placeholder="<?php echo esc_attr( _x( 'my-theme', 'Text domain placeholder', 'if-child-gen' ) ); ?>">
                                     <p class="description">
                                         <?php _e( 'The text-domain is used for translations', 'if-child-gen' ); ?>
                                     </p>
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'Tags', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'Tags', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <?php foreach( $theme_tags as $category=>$tags ) : ?>
                                         <div class="theme-tags-list">
@@ -149,21 +150,36 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php esc_html_e( 'License', 'if-child-theme' ); ?></label></th>
+                                <th><label><?php esc_html_e( 'License', 'if-child-gen' ); ?></label></th>
                                 <td>
-                                    <p><label><?php esc_html_e( 'License Name', 'if-child-theme' ); ?></label></p>
+                                    <p><label><?php esc_html_e( 'License Name', 'if-child-gen' ); ?></label></p>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_license"
-                                           placeholder="<?php esc_attr_e( 'License name', 'if-child-gen' ); ?>"
+                                           placeholder="<?php echo esc_attr( _x( 'GNU General Public License v2', 'License name placeholder', 'if-child-gen' ) ); ?>"
                                            value="GNU General Public License v2">
 
-                                    <p><label><?php esc_html_e( 'Full License URL', 'if-child-theme' ); ?></label></p>
+                                    <p><label><?php esc_html_e( 'Full License URL', 'if-child-gen' ); ?></label></p>
                                     <input type="text"
                                            class="regular-text"
                                            name="theme_license_uri"
-                                           placeholder="<?php esc_attr_e( 'Full license URL', 'if-child-gen' ); ?>"
+                                           placeholder="<?php esc_attr( _x( 'http://www.gnu.org/licenses/gpl-2.0.html', 'Full license URL placeholder', 'if-child-gen' ) ); ?>"
                                            value="http://www.gnu.org/licenses/gpl-2.0.html">
+
+                                    <p><label><?php esc_html_e( 'License Excerpt', 'if-child-gen' ); ?></label></p>
+                                    <textarea rows="5"
+                                              cols="50"
+                                              class="large-text"
+                                              name="license_text"
+                                              placeholder="<?php echo esc_attr( _x( 'Short license excerpt', 'License excerpt placeholder', 'if-child-gen' ) ); ?>">GNU GENERAL PUBLIC LICENSE
+
+Version 2, June 1991
+
+Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.</textarea>
 
                                     <p class="description">
                                         <?php _e( 'WordPress requires that themes will be licensed under a GPL compatible license.', 'if-child-gen' ); ?>
@@ -171,23 +187,13 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th><label><?php _e( 'License Text', 'if-child-gen' ); ?></label></th>
-                                <td>
-                                    <textarea rows="3"
-                                              cols="50"
-                                              class="large-text"
-                                              name="license_text"
-                                              placeholder="<?php esc_attr_e( 'Extra license information.', 'if-child-gen' ); ?>"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><label><?php _e( 'Extra comments', 'if-child-gen' ); ?></label></th>
+                                <th><label><?php _e( 'Stylesheet comments', 'if-child-gen' ); ?></label></th>
                                 <td>
                                     <textarea rows="3"
                                               cols="50"
                                               class="large-text"
                                               name="extra_comments"
-                                              placeholder="<?php esc_attr_e( 'More comments you want to add to the theme.', 'if-child-gen' ); ?>"></textarea>
+                                              placeholder="<?php echo esc_attr( _x( 'Add a comment to your style.css file', 'Stylesheet comments placeholder', 'if-child-gen' ) ); ?>">This is where you put all the CSS for your child theme</textarea>
                                 </td>
                             </tr>
                         </tbody>
@@ -212,6 +218,7 @@
     </div>
 
     <div class="style-css-header-code-wrapper animate-visibility slide-out">
-        <textarea  rows="6" cols="50" class="large-text" id="style-css-header-code" readonly></textarea>
+		<p class="description"><?php _e( 'This block is updated automatically as you change the theme information.', 'if-child-gen' ); ?></p>
+        <textarea rows="6" cols="50" class="large-text" style="text-align: left; direction: ltr" id="style-css-header-code" readonly></textarea>
     </div>
 </form>
