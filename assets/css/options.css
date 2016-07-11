@@ -1,0 +1,43 @@
+.if-child-gen .postbox .hndle,
+.if-child-gen .postbox h2 {
+    cursor: initial;
+}
+
+.if-child-gen .postbox.collapsible .hndle,
+.if-child-gen .postbox.collapsible h2 {
+    cursor: pointer;
+}
+
+
+.if-child-gen-form.submitting .postbox .inside {
+    position: relative;
+}
+.if-child-gen-form.submitting .postbox .inside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.if-child-gen .theme-tags-list label {
+    margin: 4px 8px;
+    display: inline-block;
+    width: 20%;
+}
+
+.style-css-header-code-wrapper {
+    margin-top: 20px;
+}
+
+.animate-visibility {
+    transition: height 0.15s ease-out;
+    overflow: hidden;
+}
+
+.slide-out {
+    height: 0 !important;
+}
