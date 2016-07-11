@@ -131,7 +131,7 @@
 						<button type="button" class="button button-small button-secondary if-child-theme-button hide-notice" style="opacity: 0">
 							<?php printf( __( 'Hide notice for &ldquo;%s&rdquo; theme', 'if-child-theme' ), $current_theme->name ); ?>
 						</button>
-						<a href="<?php echo admin_url( 'tools.php?page=if-child-gen' ); ?>" class="button button-small button-secondary if-child-theme-button" style="opacity: 0">
+						<a href="<?php echo admin_url( 'tools.php?page=if-child-gen' ); ?>" class="button button-small button-primary if-child-theme-button" style="opacity: 0">
 							<?php _e( 'Create a child theme', 'if-child-theme' ); ?>
 						</a>
 					</p>
