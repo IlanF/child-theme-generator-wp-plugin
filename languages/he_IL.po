@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: if-child-theme\n"
+"POT-Creation-Date: 2016-07-11 15:31+0300\n"
+"PO-Revision-Date: 2016-07-11 15:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: if-child-gen.php:100 if-child-gen.php:101 options.php:5
+msgid "Child Theme Generator"
+msgstr "יוצר תבניות הבת"
+
+#: if-child-gen.php:127
+#, php-format
+msgid "The current theme &ldquo;%s&rdquo; is not a child theme."
+msgstr "התבנית הנוכחית &ldquo;%s&rdquo; אינה תבנית בת."
+
+#: if-child-gen.php:128
+msgid "Child themes are the recommended way of modifying an existing theme."
+msgstr "תבנית בת הינה הדרך המומלצת לערוך תבנית קיימת."
+
+#: if-child-gen.php:132
+#, php-format
+msgid "Hide notice for &ldquo;%s&rdquo; theme"
+msgstr "הסתר הודעה עבור תבנית \"%s\""
+
+#: if-child-gen.php:135
+msgid "Create a child theme"
+msgstr "יצירת תבנית בת"
+
+#: if-child-gen.php:175
+msgid "There has been a problem processing your request."
+msgstr "אותרה שגיאה בהשלמת הפעולה."
+
+#: if-child-gen.php:176
+msgid "Success"
+msgstr "הצלחה"
+
+#: if-child-gen.php:177
+msgid "Failure"
+msgstr "כישלון"
+
+#: if-child-gen.php:179
+msgid "The child theme was created."
+msgstr "תבנית הבת נוצרה."
+
+#: if-child-gen.php:180
+msgid "There has been a problem creating the child theme."
+msgstr "קרתה שגיאה במהלך יצירת תבנית הבת."
+
+#: if-child-gen.php:182
+msgid "The child theme was activated successfully."
+msgstr "תבנית הבת הופעלה בהצלחה."
+
+#: if-child-gen.php:183
+msgid "The child theme could not be activated at this time."
+msgstr "לא ניתן להפעיל את תבנית הבת ברגע זה."
+
+#: if-child-gen.php:185
+msgid "Close"
+msgstr "סגור"
+
+#: if-child-gen.php:186
+msgid "Activate theme now"
+msgstr "הפעל תבנית כעת"
+
+#: options.php:10
+msgid "Basic Settings"
+msgstr "הגדרות בסיסיות"
+
+#: options.php:16
+msgid "Parent Theme"
+msgstr "תבנית אם"
+
+#: options.php:32
+msgctxt "parent theme selection active theme"
+msgid "(Current)"
+msgstr "(נוכחי)"
+
+#: options.php:49
+msgid "Toggle panel: Customize Child Theme Details"
+msgstr "הצג/הסתר את התאמה אישית של פרטי התבנית"
+
+#: options.php:54
+msgid "Customize Child Theme Details"
+msgstr "התאמה אישית של פרטי התבנית"
+
+#: options.php:59
+msgid ""
+"If you wish to distribute your child theme you may want to fill in the theme "
+"details bellow."
+msgstr "במידה ותרצה להפיץ את תבנית הבת תרצה למלא את פרטי התבנית למטה."
+
+#: options.php:61
+msgid ""
+"These fields are required if you want to upload the theme to the WordPress "
+"Theme Directory."
+msgstr ""
+"שדות אלו הם חובה במידה ותרצה להעלות את התבנית אל מאגר התוספים של WordPress."
+
+#: options.php:67
+msgid "Theme Name"
+msgstr "שם התבנית"
+
+#: options.php:72
+msgctxt "Theme name placeholder"
+msgid "My New Child Theme"
+msgstr "שם תבנית הבת החדשה שלי"
+
+#: options.php:76
+msgid "Theme URI"
+msgstr "קישור התבנית"
+
+#: options.php:81
+msgctxt "Theme URI placeholder"
+msgid "http://www.example.com/my-theme"
+msgstr "http://www.example.com/my-theme"
+
+#: options.php:85
+msgid "Description"
+msgstr "תיאור"
+
+#: options.php:91
+msgctxt "Description placeholder"
+msgid "Short description for my new theme"
+msgstr "תיאור קצר של התבנית החדשה שלי"
+
+#: options.php:95
+msgid "Author"
+msgstr "היוצר"
+
+#: options.php:97
+msgid "Author Name"
+msgstr "שם היוצר"
+
+#: options.php:104
+msgid "Author Homepage"
+msgstr "קישור היוצר"
+
+#: options.php:108
+msgctxt "Author homepage placeholder"
+msgid "http://www.example.com"
+msgstr "http://www.example.com"
+
+#: options.php:113
+msgid "Version"
+msgstr "גירסה"
+
+#: options.php:118
+msgctxt "Version number placeholder"
+msgid "x.y.z"
+msgstr "x.y.z"
+
+#: options.php:123
+msgid "Text Domain"
+msgstr "Text Domain"
+
+#: options.php:128
+msgctxt "Text domain placeholder"
+msgid "my-theme"
+msgstr "my-theme"
+
+#: options.php:130
+msgid "The text-domain is used for translations"
+msgstr "משמש לתרגומים"
+
+#: options.php:135
+msgid "Tags"
+msgstr "תגיות"
+
+#: options.php:153
+msgid "License"
+msgstr "רשיון"
+
+#: options.php:155
+msgid "License Name"
+msgstr "שם רשיון"
+
+#: options.php:159
+msgctxt "License name placeholder"
+msgid "GNU General Public License v2"
+msgstr "GNU General Public License v2"
+
+#: options.php:162
+msgid "Full License URL"
+msgstr "קישור לרשיון המלא"
+
+#: options.php:166
+msgctxt "Full license URL placeholder"
+msgid "http://www.gnu.org/licenses/gpl-2.0.html"
+msgstr "http://www.gnu.org/licenses/gpl-2.0.html"
+
+#: options.php:169
+msgid "License Excerpt"
+msgstr "תקציר הרשיון"
+
+#: options.php:174
+msgctxt "License excerpt placeholder"
+msgid "Short license excerpt"
+msgstr "תקציר הרשיון"
+
+#: options.php:185
+msgid ""
+"WordPress requires that themes will be licensed under a GPL compatible "
+"license."
+msgstr "וורדפרס מחייב שהתבניות יופצו תחת רשיון תואם GPL."
+
+#: options.php:190
+msgid "Stylesheet comments"
+msgstr "הערות נוספות"
+
+#: options.php:196
+msgctxt "Stylesheet comments placeholder"
+msgid "Add a comment to your style.css file"
+msgstr "הוסף הערות נוספות לקובץ ה- style.css של התבנית"
+
+#: options.php:210
+msgid "Create Child Theme"
+msgstr "יצירת תבנית בת"
+
+#: options.php:213
+msgid "I just want the style.css header"
+msgstr "אני רק רוצה את כותרת ה- style.css"
+
+#: options.php:217
+msgid "Creating child theme..."
+msgstr "יוצר תבנית בת..."
+
+#: options.php:221
+msgid ""
+"This block is updated automatically as you change the theme information."
+msgstr "תיבה זו מתעדכנת אוטומטית כשפרטי התבנית משתנים."
+
+#~ msgid "License Text"
+#~ msgstr "תוכן הרשיון"
+
+#~ msgid "Your theme's name"
+#~ msgstr "שם התבנית שלך"
+
+#~ msgid "Theme homepage URL"
+#~ msgstr "קישור לדף הבית של התבנית"
+
+#~ msgid "Short description of the theme"
+#~ msgstr "תיאור קצר של התבנית"
+
+#~ msgid "Author name"
+#~ msgstr "שם היוצר"
+
+#~ msgid "Author's website URL"
+#~ msgstr "קישור לעמוד הבית של היוצר"
+
+#~ msgid "1.0.0"
+#~ msgstr "1.0.0"
+
+#~ msgid "Short identifier for the theme (slug)"
+#~ msgstr "מזהה קצר לתבנית (slug)"
+
+#~ msgid "License name"
+#~ msgstr "שם רשיון"
+
+#~ msgid "Full license URL"
+#~ msgstr "קישור לרשיון המלא"
+
+#~ msgid "Extra license information."
+#~ msgstr "מידע רשיון נוסף."
+
+#~ msgid "Extra comments"
+#~ msgstr "הערות נוספות"
+
+#~ msgid "More comments you want to add to the theme."
+#~ msgstr "הערות נוספות שברצונך להוסיף לתבנית."
