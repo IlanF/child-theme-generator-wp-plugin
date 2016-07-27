@@ -1,6 +1,6 @@
 <?php
 	/*
-	 Plugin Name:       Child Theme Generator
+	 Plugin Name:       Inforall Child Theme Generator
 	 Plugin URI:        https://ilanfirsov.me/wordpress/child-theme-generator
 	 Description:       Generat Child Themes inside your WordPress dashboard.
 	 Version:           1.0.0
